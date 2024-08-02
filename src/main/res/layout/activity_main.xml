@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- AR Fragment -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/arFragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@drawable/placeholder_ar_scene" />
+
+    <!-- 간판 정보 표시 텍스트뷰 -->
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#80000000"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="인식된 간판: " />
+
+</RelativeLayout>
